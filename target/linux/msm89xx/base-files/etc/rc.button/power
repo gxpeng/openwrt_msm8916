@@ -1,0 +1,32 @@
+#!/bin/sh
+
+[ "${ACTION}" = "released" ] || exit 0
+
+# Double-click Shutdown
+# Copyright By Zy143L
+
+lockfile="/tmp/toff.lock"
+power_led="/sys/class/leds/red:power"
+delay=1
+
+shutdown() {
+    echo "timer" > "${power_led}/trigger"
+    echo "1" > "${power_led}/brightness"
+    /sbin/poweroff
+}
+
+touch_lock() {
+    touch "$lockfile"
+    sleep $delay
+    rm -rf "$lockfile"
+}
+
+if [ -e "$lockfile" ]; then
+    rm -rf "$lockfile"
+    sleep $delay
+    shutdown
+else
+    touch_lock &
+fi
+
+return 0

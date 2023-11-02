@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: GPL-2.0
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-alcatel-idol347.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-asus-z00l.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-huawei-g7.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-longcheer-l8150.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-longcheer-l8910.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-mtp.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-samsung-a3u-eur.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-samsung-a5u-eur.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-samsung-e5.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-samsung-e7.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-samsung-grandmax.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-samsung-j5.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-samsung-serranove.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-thwc-uf896.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-thwc-ufi001c.dtb
+dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-wingtech-wt88047.dtb
